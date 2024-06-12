@@ -10,4 +10,7 @@ return {
       },
     },
   },
+  keys = {
+    { "<leader><space>", LazyVim.pick("auto", { root = false }), desc = "Find Files (cwd)" },
+  },
 }
