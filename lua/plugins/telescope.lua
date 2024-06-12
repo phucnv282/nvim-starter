@@ -11,6 +11,7 @@ return {
     },
   },
   keys = {
+    { "<leader>/", LazyVim.pick("live_grep", { root = false }), desc = "Grep (cwd)" },
     { "<leader><space>", LazyVim.pick("auto", { root = false }), desc = "Find Files (cwd)" },
   },
 }
