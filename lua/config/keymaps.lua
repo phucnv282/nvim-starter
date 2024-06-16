@@ -3,5 +3,11 @@
 -- Add any additional keymaps here
 
 local keymap = vim.keymap -- for conciseness
+local map = LazyVim.safe_keymap_set
 
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+
+-- floating terminal
+map("n", "<c-/>", function()
+  LazyVim.terminal()
+end, { desc = "Terminal (cwd)" })
